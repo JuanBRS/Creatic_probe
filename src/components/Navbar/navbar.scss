@@ -1,0 +1,28 @@
+.navbar {
+  background-color: gray;
+  display: block;
+
+  &__container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-self: center;
+
+    &__item {
+      font-size: 2rem;
+      display: grid;
+      color: black;
+      text-decoration: none;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .navbar {
+    &__container {
+      grid-template-columns: auto;
+
+      // &__item{  }
+    }
+  }
+}

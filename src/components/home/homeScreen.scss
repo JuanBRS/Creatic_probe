@@ -1,0 +1,77 @@
+.home {
+  display: block;
+  background-image: linear-gradient(
+      rgba(240, 240, 240, 0.6),
+      rgba(240, 240, 240, 0.5)
+    ),
+    url("../../images/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    &__item {
+      img {
+        width: auto;
+        height: auto;
+      }
+    }
+    &__collage {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &__double {
+        display: flex;
+        gap: 5px;
+        img {
+          width: 256px;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .home {
+    &__container {
+      flex-direction: column;
+      padding-top: 200px;
+      &__item {
+        img {
+          width: 500px;
+          height: 500px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .home {
+    &__container {
+      justify-content:start;
+      padding-top: 0px;
+      &__item {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      &__collage {
+        gap: 10px;
+        &__double {
+          display: flex;
+          gap: 5px;
+          img {
+            width: 150px;
+          }
+        }
+      }
+    }
+  }
+}

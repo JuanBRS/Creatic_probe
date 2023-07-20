@@ -1,0 +1,70 @@
+.register {
+    display: block;
+    background-image: linear-gradient(
+        rgba(240, 240, 240, 0.6),
+        rgba(240, 240, 240, 0.5)
+      ),
+      url("../../images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        padding: 20px;
+        img {
+            width: 400px;
+            margin: auto;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+        &__input{
+            border-radius: 12px;
+
+        }
+
+        &__button{
+            border-radius: 12px;
+        }
+
+    }
+
+    &__media {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+
+        &__img {
+            margin: auto;
+            display: flex;
+        }
+      }
+}
+
+@media (max-width: 1190px) {
+    .register {
+      &__container {
+        grid-template-columns: auto;
+      }
+
+      &__media {
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+
+        img {
+            margin: auto;
+        }
+
+      }
+    }
+  }
