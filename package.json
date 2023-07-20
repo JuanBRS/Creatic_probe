@@ -1,5 +1,6 @@
 {
   "name": "creatic-technical-probe",
+  "homepage" : "https://juanbrs.github.io/Creatic_probe",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
